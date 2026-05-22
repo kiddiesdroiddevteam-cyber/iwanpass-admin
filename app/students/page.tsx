@@ -3,6 +3,8 @@
 import { useMemo, useState, useEffect } from 'react';
 import { DashbaordComponent } from '@/components/dashboard'; // Ensure this matches your filename
 import { Header } from '@/components/Header';
+
+export const dynamic = 'force-dynamic';
 import { Paragraph } from '@/components/Paragraph';
 import { getAuthHeaders } from '@/lib/apiClient';
 

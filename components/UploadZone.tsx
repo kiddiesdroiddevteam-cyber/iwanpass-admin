@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useState } from "react";
 import { Upload, FileText, FileJson, X } from "lucide-react";
 import { cn } from "@/lib/utils";

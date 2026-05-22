@@ -1,9 +1,13 @@
+"use client";
+
 import { useState, useCallback, useMemo } from "react";
-import ReactJson from "react-json-view";
+import dynamic from "next/dynamic";
 import { Copy, Check, Download, Braces, ListChecks, Upload, Type } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {questionService} from "../services/index"
 import Loader from "./Loader";
+
+const ReactJson = dynamic(() => import("react-json-view"), { ssr: false });
 
 interface JsonEditorProps {
   value: string;

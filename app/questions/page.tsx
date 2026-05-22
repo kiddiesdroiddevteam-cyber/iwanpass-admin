@@ -6,6 +6,8 @@ import { getMultipartHeaders } from '@/lib/apiClient';
 import JsonEditor from '@/components/JsonEditor';
 import { DashbaordComponent } from '@/components/dashboard';
 
+export const dynamic = 'force-dynamic';
+
 type FilterState = { subject: string; examType: string; examYear: string };
 type OptionItem = { subject: string; examType: string; years: Array<number | string> };
 type QuestionItem = { _id: string } & Record<string, any>;

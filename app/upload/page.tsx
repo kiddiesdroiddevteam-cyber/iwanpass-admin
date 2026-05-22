@@ -3,6 +3,8 @@ import { useState, useCallback } from "react";
 import { FileText, FileJson, Loader2, X, ChevronRight, Braces, Settings2 } from "lucide-react";
 import UploadZone from "@/components/UploadZone";
 import { DashbaordComponent } from "@/components/dashboard";
+
+export const dynamic = 'force-dynamic';
 import JsonEditor from "@/components/JsonEditor";
 import { Header } from "@/components/Header";
 import { Paragraph } from "@/components/Paragraph";

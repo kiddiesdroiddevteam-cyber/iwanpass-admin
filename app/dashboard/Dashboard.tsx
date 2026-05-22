@@ -10,6 +10,8 @@ import { Card } from "@/components/Card";
 import { RecentCard } from "@/components/RecentCard";
 import { getActiveUsers, getTotalPracticeTests, getTotalUsers } from "@/services/analytics";
 
+export const dynamic = 'force-dynamic';
+
 const recentActivities = [
   {
     activity: "Question Upload",
