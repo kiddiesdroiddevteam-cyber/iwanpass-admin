@@ -1,6 +1,7 @@
 import { DashbaordComponent } from "@/components/dashboard";
 import { Header } from "@/components/Header";
 import { Paragraph } from "@/components/Paragraph";
+import { TopBar } from "@/components/TopBar";
 import { HugeiconsIcon } from '@hugeicons/react'
 import { BookOpen02Icon, StudentsIcon, Target01Icon, AiBookIcon } from '@hugeicons/core-free-icons'
 import WeeklyActivityChart from "@/components/charts";
@@ -66,6 +67,7 @@ export const Dashboard = async () => {
 
   return (
     <>
+      <TopBar />
       <div className="flex h-full">
 
         {/* Sidebar */}
