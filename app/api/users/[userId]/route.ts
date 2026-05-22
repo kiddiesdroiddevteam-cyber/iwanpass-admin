@@ -15,10 +15,10 @@ const users = [
 // GET /api/users/:userId - Get specific user by ID
 export async function GET(
   request: NextRequest,
-  { params }: { params: { userId: string } }
+  { params }: { params: Promise<{ userId: string }> }
 ) {
   try {
-    const { userId } = params;
+    const { userId } = await params;
     const user = users.find((u) => u.id === userId);
 
     if (!user) {
@@ -34,10 +34,10 @@ export async function GET(
 // DELETE /api/users/:userId - Delete a user
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { userId: string } }
+  { params }: { params: Promise<{ userId: string }> }
 ) {
   try {
-    const { userId } = params;
+    const { userId } = await params;
     const userIndex = users.findIndex((u) => u.id === userId);
 
     if (userIndex === -1) {

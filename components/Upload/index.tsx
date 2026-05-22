@@ -111,7 +111,7 @@ const parseQuestionsFromText = (
 
 const extractTextFromPdf = async (file: File) => {
   const arrayBuffer = await file.arrayBuffer();
-  const pdfjsModule = await import('pdfjs-dist/legacy/build/pdf');
+  const pdfjsModule = await import('pdfjs-dist');
   const pdfjsLib = (pdfjsModule as any)?.default ?? pdfjsModule;
 
   // Use a hosted worker path instead of the removed/bundled worker entry path.
