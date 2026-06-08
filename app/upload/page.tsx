@@ -104,34 +104,24 @@ const Index = () => {
 
                     <div>
                       <Label text="Subject" />
-                      <select
+                      <input
+                        type="text"
                         value={metadata.subject}
                         onChange={(e) => setMetadata({ ...metadata, subject: e.target.value })}
+                        placeholder="Enter subject name"
                         className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
-                      >
-                        <option value="">Select subject</option>
-                        <option value="Mathematics">Mathematics</option>
-                        <option value="English">English</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="History">History</option>
-                      </select>
+                      />
                     </div>
 
                     <div>
                       <Label text="Exam Year" />
-                      <select
+                      <input
+                        type="text"
                         value={metadata.examYear}
                         onChange={(e) => setMetadata({ ...metadata, examYear: e.target.value })}
+                        placeholder="Enter exam year"
                         className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
-                      >
-                        <option value="">Select exam year</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                      </select>
+                      />
                     </div>
                   </div>
                 </section>
