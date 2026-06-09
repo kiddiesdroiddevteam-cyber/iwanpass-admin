@@ -98,6 +98,7 @@ const Index = () => {
                         <option value="JAMB">JAMB</option>
                         <option value="WAEC">WAEC</option>
                         <option value="NECO">NECO</option>
+                        <option value="Junior WAEC">Junior WAEC</option>
                         <option value="Common Entrance">Common Entrance</option>
                       </select>
                     </div>
